@@ -26,7 +26,7 @@ const Header = () => {
       </header>
       <header className="header-upper py-3">
         <div className="container-xxl">
-          <div className="row align-items-center">
+          <div id="wor" className="row align-items-center">
             <div className="col-2">
               <h2>
                 <Link className="text-white ">CriXanna.</Link>
@@ -68,7 +68,9 @@ Login <br /> My Account
                 </div>
             </div>
           </div>
+
         </div>
+
       </header>
       <div className="header-bottom py-3">
         <div className="container-xxl">
