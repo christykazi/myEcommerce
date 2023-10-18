@@ -356,6 +356,10 @@ font-size: 13px;
   font-size: 16px;
   color: var(--color-1c1c1b);
 }
+.action-bar {
+  top: 5%;
+  right: -26px;
+}
 /* product-card ends here */
 /* Home page ends here */
 
