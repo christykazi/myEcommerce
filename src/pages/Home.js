@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Marquee from 'react-fast-marquee'
+import BlogCart from '../components/BlogCart'
+import ProductCard from '../components/ProductCard'
 
 const Home = () => {
   return (
@@ -9,7 +12,7 @@ const Home = () => {
       <div className="row">
         <div className="col-6">
           <div className="main-banner position-relative p-3">
-            <img src="images/main-banner-1.jpg" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
             <div className="main-banner-content position-absolute">
               <h4>SUPERCHARGED FOR PROS.</h4>
               <h5>Phone 12 pro max</h5>
@@ -21,38 +24,38 @@ const Home = () => {
         <div className="col-6">
         <div className='goal d-flex flex-wrap align-items-center '>
         <div className="small-banner position-relative p-1">
-            <img src="images/catbanner-01.jpg" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://images.pexels.com/photos/3707744/pexels-photo-3707744.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>IPHONE PROS.</h4>
+              <h4>IPHONE-12 PRO.</h4>
               <h5>Phone 12 pro max</h5>
               <p>From $699 or <br />$21.62/mo.</p>
             
             </div>
           </div>
           <div className="small-banner position-relative p-1">
-            <img src="images/catbanner-02.jpg" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>NEW ARRIVAL</h4>
+              <h4>LAPTOP</h4>
               <h5>IPAD AIR</h5>
               <p>From $699 <br /> or $21.62/mo.</p>
             
             </div>
           </div>
           <div className="small-banner position-relative p-1">
-            <img src="images/catbanner-04.jpg" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://images.pexels.com/photos/3394654/pexels-photo-3394654.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>Best sales</h4>
-              <h5>Phone 12 pro max</h5>
+              <h4>HEADSET</h4>
+              <h5>Headset 12</h5>
               <p>From $699 <br />or $21.62/mo.</p>
             
             </div>
             
           </div>
           <div className="small-banner position-relative p-1">
-            <img src="images/catbanner-03.jpg" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://images.pexels.com/photos/1209434/pexels-photo-1209434.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4> PROS.</h4>
-              <h5>Phone 12 pro max</h5>
+              <h4>I-PAD</h4>
+              <h5>i-pad</h5>
               <p>From $699 <br /> or $21.62/mo.</p>
             
             </div>
@@ -194,6 +197,77 @@ const Home = () => {
          </div>
 
         
+      </div>
+    </div>
+  </section>
+  <section className="marquee-wrapper py-5">
+    <div className="container-xxl">
+      <div className="row">
+        <div className="col-12">
+          <div className="marquee-inner-wrapper card-wrapper">
+            <Marquee className='d-flex'>
+             <div className='mx-4 w-25'>
+              <img src="images/brand-01.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'>
+              <img src="images/brand-03.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'>
+              <img src="images/brand-04.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'>
+              <img src="images/brand-02.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'>
+              <img src="images/brand-05.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'>
+              <img src="images/brand-06.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'>
+              <img src="images/brand-08.png" alt="brand" />
+             </div>
+
+             <div className='mx-4 w-25'> 
+              <img src="images/brand-07.png" alt="brand" />
+             </div>
+
+
+            </Marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="blog-wrapper py-5 home-wrapper-2">
+    <div className="container-xxl">
+      <div className="row">
+      <div className="col-12">
+        <div className="section-heading">Featured </div>
+      </div>
+       <ProductCard/>
+       <ProductCard/>
+       <ProductCard/>
+       <ProductCard/>
+      </div>
+    </div>
+  </section>
+  <section className="blog-wrapper py-5 home-wrapper-2">
+    <div className="container-xxl">
+      <div className="row">
+      <div className="col-12">
+        <div className="section-heading">Our Lastest Blogs</div>
+      </div>
+       <BlogCart/>
+       <BlogCart/>
+       <BlogCart/>
+       <BlogCart/>
       </div>
     </div>
   </section>
