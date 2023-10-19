@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import BlogCart from '../components/BlogCart'
 import ProductCard from '../components/ProductCard'
+import SpecialProduct from '../components/SpecialProduct'
 
 const Home = () => {
   return (
@@ -12,7 +13,10 @@ const Home = () => {
       <div className="row">
         <div className="col-6">
           <div className="main-banner position-relative p-3">
-            <img src="https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
+            <img src="
+            https://cdn.dribbble.com/users/1048253/screenshots/15511250/media/0f08835e3f45e0de3ab59f6967d76b8b.png?resize=320x240&vertical=center
+            " className='img-fluid rounded-3' alt="main banner" />
+           {/*  <img src=" https://cdn.dribbble.com/users/6289059/screenshots/17336314/media/217c7afaeb899619ea386b614c98f1aa.jpg?resize=768x576&vertical=center" alt="" /> */}
             <div className="main-banner-content position-absolute">
               <h4>SUPERCHARGED FOR PROS.</h4>
               <h5>Phone 12 pro max</h5>
@@ -24,7 +28,7 @@ const Home = () => {
         <div className="col-6">
         <div className='goal d-flex flex-wrap align-items-center '>
         <div className="small-banner position-relative p-1">
-            <img src="https://images.pexels.com/photos/3707744/pexels-photo-3707744.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://cdn.dribbble.com/users/1038001/screenshots/15233644/media/9acd8597fd5a9364f43b1935f059231a.png?resize=400x300&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
               <h4>IPHONE-12 PRO.</h4>
               <h5>Phone 12 pro max</h5>
@@ -33,7 +37,7 @@ const Home = () => {
             </div>
           </div>
           <div className="small-banner position-relative p-1">
-            <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://cdn.dribbble.com/userupload/6321294/file/still-cd769bc3ea5b5fae1c32ba68ccf1caad.png?resize=320x240&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
               <h4>LAPTOP</h4>
               <h5>IPAD AIR</h5>
@@ -42,7 +46,7 @@ const Home = () => {
             </div>
           </div>
           <div className="small-banner position-relative p-1">
-            <img src="https://images.pexels.com/photos/3394654/pexels-photo-3394654.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://cdn.dribbble.com/userupload/3136755/file/original-c4a26656abe0ef52ad5591a30727b089.png?resize=320x240&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
               <h4>HEADSET</h4>
               <h5>Headset 12</h5>
@@ -52,7 +56,7 @@ const Home = () => {
             
           </div>
           <div className="small-banner position-relative p-1">
-            <img src="https://images.pexels.com/photos/1209434/pexels-photo-1209434.jpeg?auto=compress&cs=tinysrgb&w=600" className='img-fluid rounded-3' alt="main banner" />
+            <img src="https://cdn.dribbble.com/userupload/10474831/file/original-858ab2aaf6da12d7ddf6498f8ffe2f1f.png?resize=320x240&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
               <h4>I-PAD</h4>
               <h5>i-pad</h5>
@@ -200,6 +204,33 @@ const Home = () => {
       </div>
     </div>
   </section>
+  <section className="featured-wrapper py-5 home-wrapper-2">
+    <div className="container-xxl">
+      <div className="row">
+      <div className="col-12">
+        <div className="section-heading">Featured </div>
+      </div>
+       <ProductCard/>
+       <ProductCard/>
+       <ProductCard/>
+       <ProductCard/>
+      </div>
+    </div>
+  </section>
+  <section className='special-wrapper py-5 home-wrapper-2'>
+    <div className="container-xxl">
+      <div className="row">
+       <div className="col-12">
+        <h3 className="section-heafding">Special Products</h3>
+       </div> 
+      </div>
+      <div className="row">
+        <SpecialProduct/>
+        <SpecialProduct/>
+        <SpecialProduct/>
+      </div>
+    </div>
+  </section>
   <section className="marquee-wrapper py-5">
     <div className="container-xxl">
       <div className="row">
@@ -245,19 +276,7 @@ const Home = () => {
       </div>
     </div>
   </section>
-  <section className="blog-wrapper py-5 home-wrapper-2">
-    <div className="container-xxl">
-      <div className="row">
-      <div className="col-12">
-        <div className="section-heading">Featured </div>
-      </div>
-       <ProductCard/>
-       <ProductCard/>
-       <ProductCard/>
-       <ProductCard/>
-      </div>
-    </div>
-  </section>
+ 
   <section className="blog-wrapper py-5 home-wrapper-2">
     <div className="container-xxl">
       <div className="row">

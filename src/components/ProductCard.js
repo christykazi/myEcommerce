@@ -5,9 +5,16 @@ import { Link } from 'react-router-dom';
 const ProductCard = () => {
   return (
     <div className='col-3'>
-       <div className="product-card position-relative">
+       <Link className="product-card position-relative">
+       <div className="wishList-icon position-absolute">
+        <Link>
+          <img src="images/wish.svg" alt="" />
+        </Link>
+       </div>
         <div className="product-image">
-            <img src="images/watch.jpg" alt="product image" />
+            <img src="images/watch.jpg" className="img-fluid" alt="product image" />
+            <img  src="images/speaker.jpg"
+            className="img-fluid fluid-two"  alt="product image" />
         </div>
         <div className="product-details">
             <h6 className="brand">Harvel</h6>
@@ -26,12 +33,12 @@ const ProductCard = () => {
         </div>
         <div className="action-bar position-absolute">
           <div className='d-flex flex-column'>
-            <Link>
-              <img src="images/add-prodcompare.svg" alt="addcart" />
+          <Link>
+              <img src="images/view.svg" alt="addcart" />
             </Link>
 
             <Link>
-              <img src="images/add-cart.svg" alt="addcart" />
+              <img src="images/prodcompare.svg" alt="addcart" />
             </Link>
 
             <Link>
@@ -39,7 +46,7 @@ const ProductCard = () => {
             </Link>
           </div>
         </div>
-       </div> 
+       </Link> 
     </div>
   )
 }
