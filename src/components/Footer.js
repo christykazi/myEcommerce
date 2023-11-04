@@ -55,12 +55,12 @@ const Footer = () => {
         <h4 className='text-white mb-4'>Information</h4>
         <hr className='lenn'/>
         <div className='footer-link d-flex flex-column'>
-            <Link className='text-white py-2 mb-1' >Tablets</Link>
-            <Link className='text-white py-2 mb-1'>Laptops</Link>
-            <Link className='text-white py-2 mb-1'>Laptops</Link>
-            <Link className='text-white py-2 mb-1'>Mobile Phones</Link>
-            <Link className='text-white py-2 mb-1'>Watches</Link>
-            <Link className='text-white py-2 mb-1'>Laptops</Link>
+            <Link to='/privacy-policy' className='text-white py-2 mb-1' >Privacy Policy</Link>
+            <Link to='/refund-policy' className='text-white py-2 mb-1'>Refund Policy</Link>
+            <Link to='/shipping-policy' className='text-white py-2 mb-1'>Shipping Policy</Link>
+            <Link to='/term-conditions' className='text-white py-2 mb-1'>Terms & Conditions</Link>
+            <Link className='text-white py-2 mb-1'>Blogs</Link>
+          
             
           </div>
         </div> 
@@ -68,12 +68,12 @@ const Footer = () => {
         <h4 className='text-white mb-4'>Account</h4>
         <hr className='lenn'/>
         <div className='footer-link d-flex flex-column'>
-            <Link className='text-white py-2 mb-1' >Contact Us</Link>
-             <Link className='text-white py-2 mb-1'>Laptops</Link>
+            <Link className='text-white py-2 mb-1' >About Us</Link>
+             <Link className='text-white py-2 mb-1'>Faq</Link>
             <Link className='text-white py-2 mb-1'>Faq</Link>
-            <Link className='text-white py-2 mb-1'>About us</Link>
-            <Link className='text-white py-2 mb-1'>Laptops</Link>
-            <Link className='text-white py-2 mb-1'>Laptops</Link> 
+            <Link className='text-white py-2 mb-1'>Contact us</Link>
+            <Link className='text-white py-2 mb-1'>Link Up</Link>
+           
             
           </div>
         </div>   
@@ -86,7 +86,7 @@ const Footer = () => {
             <Link className='text-white py-2 mb-1'> Phones</Link>
             <Link className='text-white py-2 mb-1'>Watches</Link>
             <Link className='text-white py-2 mb-1'>Laptops</Link>
-            <Link className='text-white py-2 mb-1'>Laptops</Link>
+          
           </div>
         </div>
       </div>

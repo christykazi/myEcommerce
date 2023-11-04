@@ -3,10 +3,10 @@ import { Link }from 'react-router-dom'
 
 const BlogCart = () => {
   return (
-    <div className='col-3'>
+    
 <div className="blog-card">
     <div className="card-image">
-      <img src="images/blog-1.jpg" className='img-fluid' alt="blog" />
+      <img src="images/blog-1.jpg" className='img-fluid w-100' alt="blog" />
     </div>
     <div className="blog-content">
       <p className="date">17<small>th</small> Oct, 2022.</p>
@@ -16,12 +16,12 @@ const BlogCart = () => {
       <p className="desc">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus nulla officia libero culpa, quo temporibus quidem praesentium asperiores, repudiandae iure nihil consectetur?
       </p> 
-      <Link to="/" className="button">
+      <Link to="/blog/:id" className="button">
         Read More
       </Link>
     </div>
 </div>
-    </div>
+    
   )
 }
 

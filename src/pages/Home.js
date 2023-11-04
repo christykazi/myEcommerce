@@ -19,7 +19,7 @@ const Home = () => {
            {/*  <img src=" https://cdn.dribbble.com/users/6289059/screenshots/17336314/media/217c7afaeb899619ea386b614c98f1aa.jpg?resize=768x576&vertical=center" alt="" /> */}
             <div className="main-banner-content position-absolute">
               <h4>SUPERCHARGED FOR PROS.</h4>
-              <h5>Phone 12 pro max</h5>
+             
               <p>From $699 or $21.62/mo.</p>
               <Link className='button'>BUY NOW</Link>
             </div>
@@ -30,27 +30,25 @@ const Home = () => {
         <div className="small-banner position-relative p-1">
             <img src="https://cdn.dribbble.com/users/1038001/screenshots/15233644/media/9acd8597fd5a9364f43b1935f059231a.png?resize=400x300&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>IPHONE-12 PRO.</h4>
-              <h5>Phone 12 pro max</h5>
-              <p>From $699 or <br />$21.62/mo.</p>
+            <h5>Phones</h5>
+              <p>From $699 or $21.62/mo.</p>
             
             </div>
           </div>
           <div className="small-banner position-relative p-1">
             <img src="https://cdn.dribbble.com/userupload/6321294/file/still-cd769bc3ea5b5fae1c32ba68ccf1caad.png?resize=320x240&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>LAPTOP</h4>
-              <h5>IPAD AIR</h5>
-              <p>From $699 <br /> or $21.62/mo.</p>
+              <h5>LAPTOP</h5>
+              <p>From $699  or $21.62/mo.</p>
             
             </div>
           </div>
           <div className="small-banner position-relative p-1">
             <img src="https://cdn.dribbble.com/userupload/3136755/file/original-c4a26656abe0ef52ad5591a30727b089.png?resize=320x240&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>HEADSET</h4>
-              <h5>Headset 12</h5>
-              <p>From $699 <br />or $21.62/mo.</p>
+              <h5>HEADSET</h5>
+             
+              <p>From $699 or $21.62/mo.</p>
             
             </div>
             
@@ -58,9 +56,8 @@ const Home = () => {
           <div className="small-banner position-relative p-1">
             <img src="https://cdn.dribbble.com/userupload/10474831/file/original-858ab2aaf6da12d7ddf6498f8ffe2f1f.png?resize=320x240&vertical=center" className='img-fluid rounded-3' alt="main banner" />
             <div className="small-banner-content position-absolute">
-              <h4>I-PAD</h4>
-              <h5>i-pad</h5>
-              <p>From $699 <br /> or $21.62/mo.</p>
+              <h5>I-PAD</h5>
+              <p>From $699 or $21.62/mo.</p>
             
             </div>
             
@@ -106,7 +103,7 @@ const Home = () => {
         <img src="images/service-02.png" alt="services" />
         <div>
           <h6>Daily Surprise Offers</h6>
-          <p className='mb-0'>Save upto 25z5 off</p>
+          <p className='mb-0'>Save upto 25% off</p>
         </div>
        </div>
 
@@ -217,6 +214,56 @@ const Home = () => {
       </div>
     </div>
   </section>
+  <section className='famous-wrapper py-5 home-wrapper-2'>
+  <div className="container-xxl">
+      <div className="row">
+        <div className="col-3">
+          <div className="famous-card sho position-relative">
+          <img  className="img-fluid" src="https://cdn.dribbble.com/userupload/3915689/file/original-9cdee08263a8ed103cdbc339082cd608.jpg?crop=383x339-3200x2452&resize=320x240&vertical=center" alt="famous" />
+           <div className="famous-content position-absolute">
+           <h5>Smart Watch Series </h5>
+            <h6></h6>
+            <p className='text-dark'>From $399 or $16.62/mo. for 24 mo.</p>
+           </div>
+          </div>
+        </div>
+        <div className="col-3">
+          <div className="famous-card ship position-relative">
+          <img className="img-fluid" src="https://images.pexels.com/photos/4050325/pexels-photo-4050325.jpeg?auto=compress&cs=tinysrgb&w=600" alt="famous" />
+           <div className="famous-content position-absolute">
+           <h5 >Studio Display</h5>
+            <h6 className='text-dark'></h6>
+            <p className='text-dark'>27-inch laptop display</p>
+           </div>
+          </div>
+        </div>
+
+        <div className="col-3">
+          <div className="famous-card ship position-relative">
+          <img className="img-fluid" src="https://images.pexels.com/photos/14438774/pexels-photo-14438774.jpeg?auto=compress&cs=tinysrgb&w=600" alt="famous" />
+           <div className="famous-content position-absolute">
+           <h5>Smart Phones 14 pro</h5>
+            <h6 className='text-dark'></h6>
+            <p className='text-dark'> From $1999.00 or $41.62/mo. for 24</p>
+           </div>
+          </div>
+        </div>
+
+        <div className="col-3">
+          <div className="famous-card ship position-relative">
+          <img className=" ship img-fluid" src="https://images.pexels.com/photos/12021852/pexels-photo-12021852.jpeg?auto=compress&cs=tinysrgb&w=600" alt="famous" />
+           <div className="famous-content position-absolute">
+           <h5 >Home Speakers</h5>
+            <h6 className='text-dark'></h6>
+            <p className='text-dark'>From $699 or $116.58/mo. for 12 mo.</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+
   <section className='special-wrapper py-5 home-wrapper-2'>
     <div className="container-xxl">
       <div className="row">
@@ -224,10 +271,26 @@ const Home = () => {
         <h3 className="section-heafding">Special Products</h3>
        </div> 
       </div>
+      <div className="row ">
+        <SpecialProduct/>
+        <SpecialProduct/>
+        <SpecialProduct/>
+        <SpecialProduct/>
+      </div>
+    </div>
+  </section>
+  <section className="popular-wrapper py-5 home-wrapper-2">
+    <div className="container-xxl">
       <div className="row">
-        <SpecialProduct/>
-        <SpecialProduct/>
-        <SpecialProduct/>
+      <div className="col-12">
+        <h3 className="section-heading">Our Popular Products</h3>
+      </div>
+      </div>
+      <div className="row">
+      <ProductCard/>
+       <ProductCard/>
+       <ProductCard/>
+       <ProductCard/>
       </div>
     </div>
   </section>
@@ -283,10 +346,20 @@ const Home = () => {
       <div className="col-12">
         <div className="section-heading">Our Lastest Blogs</div>
       </div>
-       <BlogCart/>
-       <BlogCart/>
-       <BlogCart/>
-       <BlogCart/>
+      <div className="row">
+        <div className="col-3">
+        <BlogCart/>
+        </div>
+        <div className="col-3">
+        <BlogCart/>
+        </div>
+        <div className="col-3">
+        <BlogCart/>
+        </div>
+        <div className="col-3">
+        <BlogCart/>
+        </div>
+      </div>
       </div>
     </div>
   </section>

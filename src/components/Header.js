@@ -48,18 +48,18 @@ const Header = () => {
             </div>
             <div className="col-5">
                 <div className="header-upper-links d-flex align-items-center justify-content-between">
-                    <div><Link><BsArrowRepeat className="ico" />
+                    <div><Link to="/compare-product"><BsArrowRepeat className="ico" />
                     <p className="mb-0">compare <br />Products</p></Link></div>
 
-                    <div><Link> <BiSolidHeartCircle className="ico"/><p className="mb-0">
+                    <div><Link to="/wishList"> <BiSolidHeartCircle className="ico"/><p className="mb-0">
                     Favourite  <br />wishlist</p></Link></div>
 
-                    <div><Link> <BsPersonCircle className="ico"/><p className="mb-0">
+                    <div><Link to="/login"> <BsPersonCircle className="ico"/><p className="mb-0">
 Login <br /> My Account
                     </p></Link></div>
 
                     <div>
-                    <Link className="d-flex align-items-center gap-10 text-white"> 
+                    <Link to="/cart" className="d-flex align-items-center gap-10 text-white"> 
                     <img src="images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column gap-10">
                     <span className="badge bg-white text-dark">0</span>
@@ -92,8 +92,8 @@ Login <br /> My Account
           <div className="menu-links">
           <div className="d-flex align-items-center gap-30">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/">Our Store</NavLink>
-          <NavLink to="/">Blogs</NavLink>
+          <NavLink to="/store">Our Store</NavLink>
+          <NavLink to="/blogs">Blogs</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           </div>
           </div>

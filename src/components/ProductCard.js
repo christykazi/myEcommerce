@@ -1,17 +1,22 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  const { grid } = props;
+  let location = useLocation();
+
   return (
-    <div className='col-3'>
-       <Link className="product-card position-relative">
+   <>
+     <div 
+    className={` ${location.pathname == "/store" ? `col-${grid}` : "col-3"} `}>
+       <Link className="product-card  igm-fore position-relative">
        <div className="wishList-icon position-absolute">
         <Link>
-          <img src="images/wish.svg" alt="" />
+          <img src="images/wish.svg" alt="image" />
         </Link>
        </div>
-        <div className="product-image">
+        <div className="product-image igm-fore">
             <img src="images/watch.jpg" className="img-fluid" alt="product image" />
             <img  src="images/speaker.jpg"
             className="img-fluid fluid-two"  alt="product image" />
@@ -29,6 +34,7 @@ const ProductCard = () => {
     edit={false}
     activeColor="#ffd700"
   />
+  <p  className={`description ${grid === 12 ? "d-block" : "d-none"}`}>sit amet consectetur adipisicing elit. Commodi illum assumenda tempora quos debitis! Ullam sed repellat fugiat, reprehenderit consequuntur architecto sunt explicabo, ad, ipsa facere aliquid quis ratione laudantium!</p>
             <p className="price">$100.00</p>
         </div>
         <div className="action-bar position-absolute">
@@ -48,6 +54,56 @@ const ProductCard = () => {
         </div>
        </Link> 
     </div>
+
+    <div 
+    className={` ${location.pathname == "/store" ? `gr-${grid}` : "col-3"} `}>
+       <Link className="product-card  igm-fore position-relative">
+       <div className="wishList-icon position-absolute">
+        <Link>
+          <img src="images/wish.svg" alt="image" />
+        </Link>
+       </div>
+        <div className="product-image igm-fore">
+            <img src="images/watch.jpg" className="img-fluid" alt="product image" />
+            <img  src="images/speaker.jpg"
+            className="img-fluid fluid-two"  alt="product image" />
+        </div>
+        <div className="product-details">
+            <h6 className="brand">Harvel</h6>
+            <h5 className="product-title">
+                kids headphones bulk 10 pack multi coloured for student
+            </h5>
+            
+  <ReactStars
+    count={5}
+    size={24}
+    value='3'
+    edit={false}
+    activeColor="#ffd700"
+  />
+            <p className="price">$100.00</p>
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`} >
+             amet consectetur adipisicing elit. Commodi illum assumenda tempora quos debitis! Ullam sed repellat fugiat, reenderit consequuntur architecto sunt explicabo, ad, ipsa facere aliquid quis ratione laudantium!
+            </p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column'>
+          <Link>
+              <img src="images/view.svg" alt="addcart" />
+            </Link>
+
+            <Link>
+              <img src="images/prodcompare.svg" alt="addcart" />
+            </Link>
+
+            <Link>
+              <img src="images/add-cart.svg" alt="addcart" />
+            </Link>
+          </div>
+        </div>
+       </Link> 
+    </div>
+   </>
   )
 }
 
