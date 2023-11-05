@@ -21,7 +21,7 @@ const SingleBlog = () => {
                <Link to='/blogs' className='d-flex align-items-center gap-10'>
                <HiOutlineArrowLeft className='fs-4'/>Go back to Blogs</Link>
                 <div className="title"><h3>A Beautiful Sunday Morning Renaissance</h3>
-                <img src="images/blog-3.webp"  className='img-fluid w-100 my-4'  alt="blog" />
+                <img src="/images/blog-1.jpg"  className='img-fluid w-100 my-4'  alt="blog" />
                 <p>You are only as good as your last collection, which is an enormous pressure. I think there is something about luxury
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius officia maxime ipsam. Atque, perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore hic tempora dolores perspiciatis eos adipisci vero optio laborum.</p>
                 </div>

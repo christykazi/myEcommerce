@@ -713,6 +713,15 @@ width: 100%;
   color: var(--color-777777);
  }
  /* auth card ennds here */
+ /* policy */
+.policy{
+  background-color: white;
+  padding: 30px;
+}
+
+
+
+ /* policy ends here */
 
 /* About page  */
 
