@@ -13,12 +13,13 @@ import view from "../imagee/images/view.svg"
 
 const ProductCard = (props) => {
   const { grid } = props;
+  console.log(grid)
   let location = useLocation();
 
   return (
    <>
      <div 
-    className={` ${ location.pathname == "/store" ?
+    className={` ${ location.pathname == "/product" ?
      `gr-${grid}` : "col-3"} `}
      >
    {/*   <Link to={`/product/${product}`} className="product-card igm-fore position-relative"> */}
@@ -26,7 +27,7 @@ const ProductCard = (props) => {
        <Link to=':id' className="product-card  igm-fore position-relative">
        <div className="wishList-icon position-absolute">
         <button className='border-0 bg-transparent'>
-          <img src={wish} alt="wishlist" />
+          <img className='imgdo' src={wish} alt="wishlist" />
         </button>
        </div>
         <div className="product-image igm-fore">
@@ -69,13 +70,13 @@ const ProductCard = (props) => {
     </div>
 
     <div 
-    className={` ${ location.pathname == "/store" ?
+    className={` ${ location.pathname == "/product" ?
      `gr-${grid}` : "col-3"} `}
      >
        <Link to=':id' className="product-card  igm-fore position-relative">
        <div className="wishList-icon position-absolute">
         <Link>
-          <img src={wish} alt="image" />
+          <img className='imgdo' src={wish} alt="image" />
         </Link>
        </div>
         <div className="product-image igm-fore">
@@ -104,11 +105,11 @@ const ProductCard = (props) => {
         <div className="action-bar position-absolute">
           <div className='d-flex flex-column'>
           <Link>
-              <img src={addcart} alt="addcart" />
+              <img src={view} alt="addcart" />
             </Link>
 
             <Link>
-              <img src={addcart} alt="addcart" />
+              <img src={prodCompare} alt="addcart" />
             </Link>
 
             <Link>
