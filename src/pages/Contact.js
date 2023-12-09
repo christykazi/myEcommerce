@@ -3,6 +3,7 @@ import Meta from '../components/Meta'
 import BreadCrumb from '../components/BreadCrumb'
 import { AiOutlineHome, AiOutlineMail} from "react-icons/ai";
 import { BiPhoneCall, BiInfoCircle} from "react-icons/bi";
+import Container from '../components/Container';
 
 
 
@@ -11,8 +12,7 @@ const Contact = () => {
   <>
        <Meta  title={"Contact Us"}/>       
     <BreadCrumb title="Contact Us"/>
-    <div className="contact-wrapper py-5 home-wrapper-2">
-      <div className="container-xxl">
+    <Container class1="contact-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.670369039155!2d3.4299384740628196!3d6.436366324171701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf527cae2dbd9%3A0x35d183ae36e2d0d9!2sTransit%20Village%201%2C%20Victoria%20Island%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1698105636166!5m2!1sen!2sng" 
@@ -74,8 +74,7 @@ Ademola VI Lagos.</address>
 </div>
           </div>
         </div>
-      </div>
-    </div>
+    </Container>
   </>
   )
 }

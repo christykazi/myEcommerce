@@ -1,6 +1,15 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from 'react-router-dom';
+import prodCompare from "../imagee/images/prodcompare.svg"
+import wish from "../imagee/images/wish.svg"
+import wishlist from "../imagee/images/wishlist.svg"
+import watch from "../imagee/images/watch.jpg"
+import speaker from "../imagee/images/speaker.jpg"
+import addcart from "../imagee/images/add-cart.svg"
+import view from "../imagee/images/view.svg"
+
+
 
 const ProductCard = (props) => {
   const { grid } = props;
@@ -9,18 +18,20 @@ const ProductCard = (props) => {
   return (
    <>
      <div 
-    className={`
-    ${location.pathname == "/store" ? 
-    `gr-${grid}` : "col-3" } `}>
+    className={` ${ location.pathname == "/store" ?
+     `gr-${grid}` : "col-3"} `}
+     >
+   {/*   <Link to={`/product/${product}`} className="product-card igm-fore position-relative"> */}
+
        <Link to=':id' className="product-card  igm-fore position-relative">
        <div className="wishList-icon position-absolute">
-        <Link>
-          <img src="images/wish.svg" alt="image" />
-        </Link>
+        <button className='border-0 bg-transparent'>
+          <img src={wish} alt="wishlist" />
+        </button>
        </div>
         <div className="product-image igm-fore">
-            <img src="images/watch.jpg" className="img-fluid" alt="product image" />
-            <img  src="images/speaker.jpg"
+            <img src={watch} className="img-fluid" alt="product image" />
+            <img  src={speaker}
             className="img-fluid fluid-two"  alt="product image" />
         </div>
         <div className="product-details">
@@ -41,33 +52,35 @@ const ProductCard = (props) => {
         </div>
         <div className="action-bar position-absolute">
           <div className='d-flex flex-column'>
-          <Link>
-              <img src="images/view.svg" alt="addcart" />
-            </Link>
+          <button className='border-0 bg-transparent'>
+              <img src={view} alt="addcart" />
+            </button>
 
-            <Link>
-              <img src="images/prodcompare.svg" alt="addcart" />
-            </Link>
+            <button className='border-0 bg-transparent'>
+              <img src={prodCompare}alt="addcart" />
+            </button>
 
-            <Link>
-              <img src="images/add-cart.svg" alt="addcart" />
-            </Link>
+            <button className='border-0 bg-transparent'>
+              <img src= {addcart}  alt="addcart" />
+            </button>
           </div>
         </div>
        </Link> 
     </div>
 
     <div 
-    className={` ${location.pathname == "/store" ? `gr-${grid}` : "col-3"} `}>
-       <Link className="product-card  igm-fore position-relative">
+    className={` ${ location.pathname == "/store" ?
+     `gr-${grid}` : "col-3"} `}
+     >
+       <Link to=':id' className="product-card  igm-fore position-relative">
        <div className="wishList-icon position-absolute">
         <Link>
-          <img src="images/wish.svg" alt="image" />
+          <img src={wish} alt="image" />
         </Link>
        </div>
         <div className="product-image igm-fore">
             <img src="images/watch.jpg" className="img-fluid" alt="product image" />
-            <img  src="images/speaker.jpg"
+            <img  src={speaker}
             className="img-fluid fluid-two"  alt="product image" />
         </div>
         <div className="product-details">
@@ -91,15 +104,15 @@ const ProductCard = (props) => {
         <div className="action-bar position-absolute">
           <div className='d-flex flex-column'>
           <Link>
-              <img src="images/view.svg" alt="addcart" />
+              <img src={addcart} alt="addcart" />
             </Link>
 
             <Link>
-              <img src="images/prodcompare.svg" alt="addcart" />
+              <img src={addcart} alt="addcart" />
             </Link>
 
             <Link>
-              <img src="images/add-cart.svg" alt="addcart" />
+              <img src={addcart} alt="addcart" />
             </Link>
           </div>
         </div>

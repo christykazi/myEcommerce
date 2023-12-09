@@ -4,8 +4,8 @@ import { Link }from 'react-router-dom'
 const BlogCart = () => {
   return (
     
-<div className="blog-card">
-    <div className="card-image">
+<div className="blog-card ">
+    <div className="card-image ">
       <img src="images/blog-1.jpg" className='img-fluid w-100' alt="blog" />
     </div>
     <div className="blog-content">
@@ -20,8 +20,8 @@ const BlogCart = () => {
         Read More
       </Link>
     </div>
-</div>
-    
+
+    </div> 
   )
 }
 

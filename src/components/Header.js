@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import {BsSearch, BsPersonCircle, BsArrowRepeat} from 'react-icons/bs'
 import {BiSolidHeartCircle} from 'react-icons/bi'
+import Cart from "../imagee/images/cart.svg";
 const Header = () => {
   return (
     <>
@@ -29,7 +30,8 @@ const Header = () => {
           <div id="wor" className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white ">CriXanna.</Link>
+                <a 
+                href="/">CriXanna.</a>
               </h2>
             </div>
             <div className="col-5">
@@ -60,7 +62,7 @@ Login <br /> My Account
 
                     <div>
                     <Link to="/cart" className="d-flex align-items-center gap-10 text-white"> 
-                    <img src="images/cart.svg" alt="cart" />
+                    <img src={Cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
                     <span className="badge bg-white text-dark">0</span>
                     <p className="mb-0">$ 1500</p>
