@@ -257,7 +257,7 @@ const Home = () => {
         <SpecialProduct/>
       </div>
  </Container> 
-  <Container class1='"popular-wrapper py-5 home-wrapper-2"'>
+  <Container class1="popular-wrapper py-5 home-wrapper-2">
   <div className="row">
       <div className="col-12">
         <h3 className="section-heading">Our Popular Products</h3>
