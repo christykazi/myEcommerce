@@ -252,6 +252,7 @@ const props = {
           </div>
           <div className="row">
             <ProductCard />
+        
           </div>
         
       </Container>

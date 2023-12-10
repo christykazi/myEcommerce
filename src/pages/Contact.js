@@ -4,10 +4,43 @@ import BreadCrumb from '../components/BreadCrumb'
 import { AiOutlineHome, AiOutlineMail} from "react-icons/ai";
 import { BiPhoneCall, BiInfoCircle} from "react-icons/bi";
 import Container from '../components/Container';
+import  { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
 const Contact = () => {
+
+  const [message,setMessage] = useState(false)
+  /* const handleSubmit = (e)=>{
+    e.preventDefault()
+    setMessage(true)
+  } */
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_y5lsfzb', 'template_xad8hgo', form.current, 'RIC4x65BxILJraNlf')
+
+ /* for disappearing form */
+    e.target.reset()
+
+
+    /* .then((result) => {
+      e.preventDefault()
+      setMessage(true)
+        console.log(result.text);
+        console.log("message sent")
+    }, (error) => {
+        console.log(error.text);
+    });
+     */
+  };
+
+
+
   return (
   <>
        <Meta  title={"Contact Us"}/>       
@@ -24,27 +57,38 @@ const Contact = () => {
 <div className="contact-inner-wrapper d-flex   justify-content-between">
 <div>
   <h3 className="contact-title mb-4">Contact</h3>
-  <form action="" className='d-flex flex-column gap-15'>
+
+  <form  ref={form} onSubmit={sendEmail} action="" className='d-flex flex-column gap-15'>
    <div>
    <input 
-   type="text"  className='form-control' placeholder='Name' required/>
+   type="text" 
+   name='name'
+    className='form-control' placeholder='Name' required/>
    </div>
+
    <div>
    <input 
-   type="email"  className='form-control' placeholder='Email' required/>
+   type="email" 
+   name='email'
+    className='form-control' placeholder='Email' required/>
    </div>
+
    <div>
-   <input type="tel"  className='form-control' placeholder='Mobile Number' required/>
+   <input type="tel" 
+   name='mobile'
+    className='form-control' placeholder='Mobile Number' required/>
    </div>
+
    <div>
    <textarea
-    name="" id="" cols="30" 
+    name="message" id="" cols="30" 
    className='w-100 form-control'
    rows="4" placeholder='Comments'></textarea>
    </div>
    <div>
-    <button className='button border-0' >Submit</button>
+    <button type='submit' className='button border-0' >Submit</button>
    </div>
+   {setMessage && <span>Thanks, I'll reply ASAP &#128512;&#128512; </span> }
   </form>
 </div>
 <div>

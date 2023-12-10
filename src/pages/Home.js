@@ -19,10 +19,11 @@ const Home = () => {
             " className='img-fluid rounded-3' alt="main banner" />
            {/*  <img src=" https://cdn.dribbble.com/users/6289059/screenshots/17336314/media/217c7afaeb899619ea386b614c98f1aa.jpg?resize=768x576&vertical=center" alt="" /> */}
             <div className="main-banner-content position-absolute">
+            <Link className='upp button '>BUY NOW</Link>
               <h4>SUPERCHARGED FOR PROS.</h4>
              
               <p>From $699 or $21.62/mo.</p>
-              <Link className='upp button '>BUY NOW</Link>
+        
             </div>
           </div>
         </div>
