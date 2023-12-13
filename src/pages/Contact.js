@@ -109,6 +109,7 @@ Ademola VI Lagos.</address>
     <a href="mailto: agbaichristiana37@gmail.com">agbaichristiana37@gmail.com</a>
      </li>
     <li className='mb-3 d-flex gap-15 align-items-center '>
+    <p>h</p>
       <BiInfoCircle className='fs-5'/>
       <p className='mb-0'> Monday - Friday 10AM - 8PM</p>
     </li>
