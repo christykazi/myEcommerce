@@ -63,7 +63,7 @@ const Contact = () => {
    <input 
    type="text" 
    name='name'
-    className='form-control' placeholder='Name' required/>
+    className='form-control' placeholder='Full Name' required/>
    </div>
 
    <div>
