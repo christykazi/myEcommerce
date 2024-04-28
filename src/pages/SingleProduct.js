@@ -39,7 +39,6 @@ const props = {
             <div className="col-6">
               <div className="main-product-image">
                <div>
-               <ReactImageZoom {...props} />
                </div> 
               </div>
               <div className="other-product-images d-flex flex-wrap gap-15">
