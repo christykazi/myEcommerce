@@ -259,3 +259,5 @@ const props = {
     </>
   );
 };
+
+export default SingleProduct;
