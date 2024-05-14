@@ -250,4 +250,6 @@ const props = {
               <h3 className="section-heading">Our Popular Products</h3>
             </div>
           </div>
-          <div className="ro
+          <div className="row">
+            <ProductCard />
+
