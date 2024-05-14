@@ -250,14 +250,4 @@ const props = {
               <h3 className="section-heading">Our Popular Products</h3>
             </div>
           </div>
-          <div className="row">
-            <ProductCard />
-        
-          </div>
-        
-      </Container>
-    </>
-  );
-};
-
-export default SingleProduct;
+          <div className="ro
