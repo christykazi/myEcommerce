@@ -249,4 +249,14 @@ const props = {
             <div className="col-12">
               <h3 className="section-heading">Our Popular Products</h3>
             </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+        
+          </div>
+        
+      </Container>
+    </>
+  );
+};
 
