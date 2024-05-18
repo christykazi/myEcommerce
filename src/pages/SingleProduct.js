@@ -251,4 +251,8 @@ const props = {
             </div>
           </div>
           <div className="row">
-          
+            <ProductCard />
+        
+          </div>
+        
+
