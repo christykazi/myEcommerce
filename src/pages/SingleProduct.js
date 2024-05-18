@@ -255,4 +255,9 @@ const props = {
         
           </div>
         
+      </Container>
+    </>
+  );
+};
 
+export default SingleProduct;
