@@ -247,7 +247,8 @@ const props = {
         
           <div className="row">
             <div className="col-12">
-              <h3 className="section-heading">Our Po </div>
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
           </div>
           <div className="row">
             <ProductCard />
